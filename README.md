@@ -11,5 +11,5 @@ A script to study stats for a an biking share application
 bikeshare.py
 
 ### Credits
-Carlos Soto
+Carlos Soto Mora
 
