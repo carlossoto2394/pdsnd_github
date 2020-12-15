@@ -4,12 +4,31 @@ import pandas as pd
 import numpy as np
 
 ## Dictionaries
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 
+    'chicago': 'chicago.csv',           
+    'new york city': 'new_york_city.csv',
+    'washington': 'washington.csv' 
+}
 
-valid_months= ('all','january','february','march','april','may','june') 
-valid_days= ('all','monday','tuesday','wednesday','thursday','friday','saturday','sunday') 
+valid_months= (
+    'all','january',
+    'february',
+    'march',
+    'april',
+    'may',
+    'june'
+) 
+
+valid_days= (
+    'all',
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday'
+) 
 
 MONTHS = { 'january': 1,'february': 2,'march': 3,'april': 4,'may': 5,'june': 6}
 MONTHS_name = { 1: 'january',2: 'february',3: 'march',4:'april',5:'may',6:'june'}
@@ -23,17 +42,6 @@ cities_with_userinfo= ('chicago','new york city')
 print('Hello! Let\'s explore some US bikeshare data!')
 
 def get_filters():
-#    """
-#    Asks user to specify a city, month, and day to analyze.
-
-#    Returns:
-#        (str) city - name of the city to analyze
-#        (str) month - name of the month to filter by, or "all" to apply no month filter
-#        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-#    """
-
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-  
     while True: 
         input_city=str(input('please select the city that you want to study - chicago, new york city or washington :     ').lower())
 
